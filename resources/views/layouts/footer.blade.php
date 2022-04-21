@@ -28,7 +28,11 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2022</div>
+                    </hr>
+</br>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; All Rights Reserved 2022</div>
+                    </hr>
+                    </br>
                     </div>
                 </div>
             </div>

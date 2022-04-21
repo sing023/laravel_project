@@ -5,9 +5,10 @@
 @import "tailwindcss/utilities";
 
 
+
 .background-image 
 {
-    background-image: url('assets/img/post-bg.jpg');
+    background-image: url('assets/img/about-bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
