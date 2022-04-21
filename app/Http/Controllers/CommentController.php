@@ -56,7 +56,6 @@ class CommentController extends Controller
             'user_id' => auth()->user()->id,
             'post_id' => $request->input('post_id'),
         ]);
-         //return View('comment.show');
          /*
         $comment = new Comment;
         $comment->description = $request->input('comment_body');
@@ -72,8 +71,6 @@ class CommentController extends Controller
         $comments = Comment::get()->where('post_id', $request->input('post_id'));
         return view('blog.show')
          ->with('post', Post::where('id',  $request->input('post_id'))->first());
-        //return view('blog.show',compact($comments));
-        //->with('comments', Comment::orderBy('updated_at', 'DESC')->get());
     }
 
     /**

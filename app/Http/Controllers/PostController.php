@@ -75,7 +75,6 @@ class PostController extends Controller
     public function show($slug)
     {
         return view('blog.show')
-           // ->with('posts', Post::orderBy('updated_at', 'DESC')->get());
             ->with('post', Post::where('slug', $slug)->first());
     }
     
