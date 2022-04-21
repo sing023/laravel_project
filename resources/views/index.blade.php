@@ -20,9 +20,6 @@ $posts = Post::all();
             </div>
         </div>
     </div>
-
-    
-
     
 
     <div class="text-center py-15">

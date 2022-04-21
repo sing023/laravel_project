@@ -112,15 +112,12 @@ class CommentController extends Controller
         $post_id = $comment->post_id;
         $post= Post::get()->where('id',$post_id)->first();
         
-
-        $newImageName = uniqid() . '.' . $request->image->extension();
-        $request->image->move(public_path('images'), $newImageName);
+        
         Comment::where('slug', $slug)
             ->update([
                 'description' => $request->input('description'),
                 'slug' => SlugService::createSlug(Comment::class, 'slug', $request->description),
                 'user_id' => auth()->user()->id,
-                'image_path' => $newImageName,
             ]);
         return view('blog.show')->with('post',$post);
     }
