@@ -46,7 +46,6 @@
                                 name="image"
                                 class="btn btn-warning"
                                 value="Select a file">
-           
                         </div>
                         </br>
                         <div class="form-group">
